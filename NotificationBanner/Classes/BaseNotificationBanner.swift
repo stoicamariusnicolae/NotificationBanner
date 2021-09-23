@@ -157,7 +157,7 @@ open class BaseNotificationBanner: UIView {
                 .map { $0?.windows.first } ?? UIApplication.shared.delegate?.window ?? UIApplication.shared.keyWindow
         }
 
-        return UIApplication.shared.delegate?.window ?? nil
+        return UIApplication.shared.windows.first ?? UIApplication.shared.delegate?.window ?? nil
     }()
 
     /// The position the notification banner should slide in from

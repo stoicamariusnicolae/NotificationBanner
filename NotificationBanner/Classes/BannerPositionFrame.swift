@@ -26,8 +26,8 @@ public enum BannerPosition: Int {
 
 class BannerPositionFrame {
     
-    private(set) var startFrame: CGRect!
-    private(set) var endFrame: CGRect!
+    private(set) var startFrame: CGRect = CGRect.zero
+    private(set) var endFrame: CGRect = CGRect.zero
 
     init(
         bannerPosition: BannerPosition,
